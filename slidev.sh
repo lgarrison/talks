@@ -3,7 +3,7 @@
 case "$1" in
 build)
   for i in $(cd presentations; ls); do
-    slidev build ./presentations/$i/slides.md -d --base /talks/$i/ --out ../../dist/$i/ --emptyOutDir
+    slidev build ./presentations/$i/slides.md -d --base /talks/$i/ --out ../../dist/$i/
   done
 ;;
 dev)
