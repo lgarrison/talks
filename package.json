@@ -5,6 +5,7 @@
   "scripts": {
     "build-all": "./build_all.sh build",
     "dev": "./dev.sh",
+    "sb": "./stackblitz.sh",
     "export-all": "./build_all.sh export"
   },
   "dependencies": {
