@@ -21,8 +21,8 @@ Lehman Garrison (SCC)
 March 25, 2025
 
 <div class="image-container">
-  <img src="./cca.png" alt="CCA">
-  <img src="./scc.png" alt="SCC">
+  <img src="./assets/cca.png" alt="CCA">
+  <img src="./assets/scc.png" alt="SCC">
 </div>
 
 <style>
@@ -74,7 +74,7 @@ layout: two-cols
 ::right::
 
 <div style="text-align: center;">
-<img src="./tutorial.png" width="80%" style="margin:auto;">
+<img src="./assets/venv_tutorial.png" width="80%" style="margin:auto;">
 <a style="margin:auto;" href="https://docs.python.org/3/tutorial/venv.html">https://docs.python.org/3/tutorial/venv.html</a>
 </div>
 ---

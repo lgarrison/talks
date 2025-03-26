@@ -1,11 +1,11 @@
 {
-  "name": "slidev-new",
+  "name": "talks",
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build",
-    "dev": "slidev --open",
-    "export": "slidev export"
+    "build": "./slidev.sh build",
+    "dev": "./slidev.sh dev",
+    "export": "./slidev.sh export"
   },
   "dependencies": {
     "@slidev/cli": "^0.50.0-beta.10",
@@ -13,5 +13,8 @@
     "@slidev/theme-seriph": "latest",
     "vue": "^3.5.13"
   },
-  "packageManager": "pnpm@9.14.4"
+  "packageManager": "pnpm@9.14.4",
+  "devDependencies": {
+    "playwright-chromium": "^1.51.1"
+  }
 }

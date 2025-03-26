@@ -1,11 +1,11 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# talks
 
-To start the slide show:
+- https://lgarrison.github.io/talks/01_VirtualEnvironments/
 
-- `npm install`
-- `npm run dev`
-- visit http://localhost:3030
+Interactive editing/viewing: https://stackblitz.com/~/github.com/lgarrison/talks. In StackBlitz: `npm run dev presentations/01_VirtualEnvironments`.
 
-Edit the [slides.md](./slides.md) to see the changes.
+## Acknowledgements
+Based on [sli.dev](sli.dev), with some ideas from https://github.com/gabriel-del/slidev.
 
-Learn more about Slidev on [documentations](https://sli.dev/).
+## License
+CC-BY-4.0
