@@ -6,9 +6,6 @@ build)
     slidev build ./presentations/$i/slides.md -d --base /talks/$i/ --out ../../dist/$i/
   done
 ;;
-dev)
-  slidev $2
-;;
 export)
   mkdir -p pdf
   for i in $(cd presentations; ls); do
