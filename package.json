@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "./slidev.sh build",
-    "dev": "slidev dev",
+    "dev": "slidev",
     "export": "./slidev.sh export"
   },
   "dependencies": {
