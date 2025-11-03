@@ -164,14 +164,14 @@ table td, table th {
 }
 </style>
 
-| Name | Number of Particles | Date Completed | Notes |
-| ---- | ------------------- | -------------- | ----- |
-| AbacusSummit | 60 T | 2020 | Flagship suite for DESI |
-| AbacusPNG & DESI-2 | 1.1 T | 2023 | Post-AbacusSummit extension sims for primordial non-Gaussianity and high redshift |
-| <hr> | <hr> | <hr> | <hr> |
-| AbacusSummit $w_0w_a$ | 8 T? | Early 2026? | DESI request submitted for Perlmutter time |
-| Backlight | 22 T? | Mid 2026? | Flatiron project focused on light cones and CMB lensing |
-| Frontier | ? | Late 2026? | Proposal submitted for new flagship |
+| Name | Number of Particles | Date Completed | Notes | Slide |
+| ---- | ------------------- | -------------- | ----- | ----- |
+| AbacusSummit | 60 T | 2020 | Flagship suite for DESI | <Link to="AbacusSummit">🔗</Link> |
+| AbacusPNG & DESI-2 | 1.1 T | 2023 | Post-AbacusSummit extension sims for primordial non-Gaussianity and high redshift | <Link to="png">🔗</Link> |
+| <hr> | <hr> | <hr> | <hr> | <hr> |
+| AbacusSummit $w_0w_a$ | 8 T? | Early 2026? | DESI request submitted for Perlmutter time | <Link to="w0wa">🔗</Link> |
+| Backlight | 22 T? | Mid 2026? | Flatiron project focused on light cones and CMB lensing | <Link to="backlight">🔗</Link> |
+| Frontier | ? | Late 2026? | Proposal submitted for new flagship | <Link to="frontier">🔗</Link> |
 
 ---
 
@@ -179,6 +179,7 @@ table td, table th {
 
 ---
 layout: two-cols-header
+routeAlias: AbacusSummit
 ---
 
 # AbacusSummit
@@ -252,6 +253,7 @@ table td, table th {
 
 ---
 layout: two-cols-header
+routeAlias: png
 ---
 
 # AbacusPNG and DESI-2 Simulations
@@ -296,6 +298,8 @@ layout: section
 # Planned Simulations
 
 ---
+routeAlias: w0wa
+---
 
 # DESI $w_0w_a$ Simulations
 - DESI Cross-Analysis Infrastructure (CAI) WG has identified having simulations in the best-fit DR2 $w_0w_a$ cosmology as a priority
@@ -307,6 +311,8 @@ layout: section
 |---|---:|---:|---:|---:|---:|
 | `base` | $6912^3$ | 2000 | $2.1 \times 10^9$  | 0.1 | 25 |
 
+---
+routeAlias: backlight
 ---
 
 # AbacusBacklight
@@ -328,6 +334,7 @@ layout: section
 
 ---
 layout: two-cols-header
+routeAlias: frontier
 ---
 
 # AbacusFrontier
