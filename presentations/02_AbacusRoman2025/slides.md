@@ -149,6 +149,8 @@ html:not(.dark) .light-only {
 </style>
 
 ---
+routeAlias: sims
+---
 
 # Overview of Major Abacus Simulations
 
@@ -351,4 +353,4 @@ Alexander Johnson (Harvard)
 
 ---
 # Summary
-- [Overview of Major Abacus Simulations](#overview-of-major-abacus-simulations)
+- <Link to="sims" title="Overview of Major Abacus Simulations"/>
