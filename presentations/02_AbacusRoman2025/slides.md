@@ -266,7 +266,7 @@ routeAlias: png
 ::left::
 
 ## AbacusPNG
-- Simulations using initial conditions with local-type primordial non-Gaussianity ($f_\mathrm{NL}$) in the initial conditions
+- Simulations using initial conditions with local-type primordial non-Gaussianity ($f_\mathrm{NL}$)
 - `zeldovich-PLT` code modified to implement $f_\mathrm{NL}$
 - Described in [Hadzhiyska et al. (2024) ![](https://img.shields.io/badge/DOI-10.1103/PhysRevD.109.103530-blue)](https://doi.org/10.1103/PhysRevD.109.103530)
 - $f_\mathrm{NL}$ values of -100, -30, 0, 30, 100
