@@ -152,12 +152,20 @@ html:not(.dark) .light-only {
 
 # Overview of Major Abacus Simulations
 
-<!-- TODO: table of contents? -->
+<style>
+table {
+  font-size: 1em;
+}
+table td, table th {
+  padding: 0.2em 0.5em;
+  line-height: 1.2;
+}
+</style>
 
 | Name | Number of Particles | Date Completed | Notes |
 | ---- | ------------------- | -------------- | ----- |
 | AbacusSummit | 60 T | 2020 | Flagship suite for DESI |
-| AbacusPNG & DESI2 | 700 B & 430 B | 2023 | Post-AbacusSummit extension sims for primordial non-Gaussianity and high redshift |
+| AbacusPNG & DESI-2 | 1.1 T | 2023 | Post-AbacusSummit extension sims for primordial non-Gaussianity and high redshift |
 | <hr> | <hr> | <hr> | <hr> |
 | AbacusSummit $w_0w_a$ | 8 T? | Early 2026? | DESI request submitted for Perlmutter time |
 | Backlight | 22 T? | Mid 2026? | Flatiron project focused on light cones and CMB lensing |
@@ -262,7 +270,7 @@ layout: two-cols-header
 ::right::
 
 ## DESI-2
-- Higher-resolution simulations with more high-redshift outputs
+- Higher-resolution simulations with more high-redshift outputs than AbacusSummit
 - Designed for DESI-2 forecasts
 - First simulations to use the new Abacus 2D domain decomposition
 - Minor improvements for high redshift accuracy
@@ -340,3 +348,7 @@ layout: two-cols-header
 <img src="./assets/johnson2022_alexander_3.jpg" style="max-width: 80%; display: block; margin: 0 auto;">
 Alexander Johnson (Harvard)
 </div>
+
+---
+# Summary
+- [Overview of Major Abacus Simulations](#overview-of-major-abacus-simulations)
