@@ -28,13 +28,18 @@ routerMode: hash
 </style>
 
 # Recent and Planned Abacus $N$-body Simulations
-
-Lehman Garrison<br>
-Software Engineer<br>
+<div>
+Lehman Garrison<sup>1</sup><br>
+Senior Software Engineer<br>
 Scientific Computing Core<br>
 Flatiron Institute<br><br>
 Roman SC Cosmology WG Telecon<br>
 November 4, 2025
+</div>
+
+<div class="absolute bottom-4 right-4 text-xs">
+<sup>1</sup> lgarrison@flatironinstitute.org
+</div>
 
 <br>
 
