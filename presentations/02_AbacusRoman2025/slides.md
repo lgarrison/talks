@@ -347,15 +347,22 @@ routeAlias: frontier
 - Specifics will depend on whether the proposal is accepted, and if so, how much time is allocated
 - Key aspect is the addition of a new physics model
   - "Massless aggregator particles" (MAPs) are employed to model the cooling of baryons in dark matter halos
-  - MAPs provide sites for galaxy placement in an HOD-style framework
+  - MAPs provide estimated galaxy abundances and sites for placement in an HOD-style framework
   - Johnson et al. (in prep.)
 - Timeline: simulations finish late 2026, with data release in early 2027?
 
 ::right::
 
-<div style="text-align: center; font-size: smaller; width: 150px; margin: auto;">
-<img src="./assets/johnson2022_alexander_3.jpg" style="max-width: 80%; display: block; margin: 0 auto;">
-Alexander Johnson (Harvard)
+<div class="grid grid-cols-2 gap-1 mt--10 max-w-md">
+  <img src="./assets/Lehman_HOD1.png" alt="HOD 1" class="w-full h-48 object-contain">
+  <img src="./assets/Lehman_HOD2.png" alt="HOD 2" class="w-full h-48 object-contain">
+  <img src="./assets/Lehman_xi1.png" alt="xi 1" class="w-full h-48 object-contain">
+  <img src="./assets/Lehman_xi2.png" alt="xi 2" class="w-full h-48 object-contain">
+</div>
+
+<div class="absolute bottom-4 right-4 flex items-end gap-2 text-sm">
+  <div class="w-20 text-right flex items-center">Alexander Johnson (Harvard)</div>
+  <img src="./assets/johnson2022_alexander_3.jpg" class="w-20 h-20 object-cover flex-shrink-0">
 </div>
 
 ---
