@@ -31,7 +31,7 @@ routerMode: hash
 <div class="authors-container">
   <div>
     Lehman Garrison<br>
-    <Link>github.com/lgarrison</Link><br>
+    <a href="https://github.com/lgarrison">github.com/lgarrison</a><br>
     Senior Software Engineer<br>
     Scientific Computing Core (SCC)<br>
     Flatiron Institute<br>
@@ -39,7 +39,7 @@ routerMode: hash
 
   <div>
     Nico Posner<br>
-    <Link>github.com/nrposner</Link><br>
+    <a href="https://github.com/nrposner">github.com/nrposner</a><br>
     University of Chicago<br>
     SCC Intern, Summer 2025<br>
   </div>
@@ -143,7 +143,7 @@ srun python myscript.py
 
 <div style="text-align: center; font-size: smaller; width: 80%; margin: auto;">
 <img src="./assets/slurm.png" style="max-width: 40%; display: block; margin: auto">
-<Link>https://slurm.schedmd.com</Link>
+<a href="https://slurm.schedmd.com">https://slurm.schedmd.com</a>
 </div>
 
 ---
@@ -366,7 +366,7 @@ request       up   infinite    128   idle gh[1001-1002],gpuxl-data1,worker[5364-
 
 - `fi-slurm-utils`: collection of Rust-based CLI tools for users to inspect cluster state
   - Developed at Flatiron Institute
-  - Available on GitHub (Apache-2 license): <Link>github.com/flatironinstitute/fi-slurm-utils</Link>
+  - Available on GitHub (Apache-2 license): <a href="https://github.com/flatironinstitute/fi-slurm-utils">github.com/flatironinstitute/fi-slurm-utils</a>
 - `fi-nodes`: displays node availability, grouped by "feature"
   - Arranges nodes hierarchically, based on administrator-assigned node feature strings
   - Helps with discoverability of node types
@@ -704,5 +704,5 @@ pub struct Node {
 
 <div style="text-align: center; width: 80%; margin: auto;">
 <img src="./assets/gh_qr.png" width="150px" style="max-width: 40%; display: block; margin: auto">
-<Link>https://github.com/flatironinstitute/fi-slurm-utils</Link>
+<a href="github.com/flatironinstitute/fi-slurm-utils">https://github.com/flatironinstitute/fi-slurm-utils</a>
 </div>
