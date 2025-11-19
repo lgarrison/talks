@@ -143,7 +143,7 @@ srun python myscript.py
 
 <div style="text-align: center; font-size: smaller; width: 80%; margin: auto;">
 <img src="./assets/slurm.png" style="max-width: 40%; display: block; margin: auto">
-<a href="https://slurm.schedmd.com">https://slurm.schedmd.com</a>
+<a href="https://slurm.schedmd.com">slurm.schedmd.com</a>
 </div>
 
 ---
@@ -699,5 +699,5 @@ pub struct Node {
 
 <div style="text-align: center; width: 80%; margin: auto;">
 <img src="./assets/gh_qr.png" width="150px" style="max-width: 40%; display: block; margin: auto">
-<a href="github.com/flatironinstitute/fi-slurm-utils">https://github.com/flatironinstitute/fi-slurm-utils</a>
+<a href="https://github.com/flatironinstitute/fi-slurm-utils">github.com/flatironinstitute/fi-slurm-utils</a>
 </div>
