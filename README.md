@@ -4,6 +4,7 @@
 Links to the rendered, static HTML versions of the presentations:
 - https://lgarrison.github.io/talks/01_VirtualEnvironments/
 - https://lgarrison.github.io/talks/02_AbacusRoman2025/
+- https://lgarrison.github.io/talks/03_fi-slurm-utils/
 
 For dynamic content, use a StackBlitz web container:
 - https://stackblitz.com/~/github.com/lgarrison/talks.
