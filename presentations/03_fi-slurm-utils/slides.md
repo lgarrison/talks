@@ -2,7 +2,7 @@
 # You can also start simply with 'default'
 theme: default
 # background: https://cover.sli.dev
-title: Recent and Planned Abacus N-body Simulations
+title: Rust-Based Slurm Monitoring CLI Utilities
 # apply unocss classes to the current slide
 class: text-center
 # slide transition: https://sli.dev/guide/animations.html#slide-transitions
@@ -54,7 +54,7 @@ November 19, 2025<br>
 
 <div class="bottom-container">
   <div class="github-container">
-    <a href="https://github.com/abacusorg" class="github-link" aria-label="GitHub Profile">
+    <a href="https://github.com/flatironinstitute/fi-slurm-utils" class="github-link" aria-label="GitHub Profile">
       <img src="./assets/github-mark.svg" alt="GitHub" class="github-icon light-only">
       flatironinstitute/fi-slurm-utils
     </a>
