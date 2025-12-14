@@ -1,0 +1,14 @@
+- Profiling
+    - Overview of profiling
+    - Tracing vs sampling profilers
+- CLI profiling (py-spy)
+    - Example program with dummy sleep()
+    - Quiz: which program corresponds to which profile?
+    - Self time, cumulative time
+    - More realistic examples (Astropy LombScargle? Gala?)
+- Flame graphs and visual profilers
+    - Speedscope
+- Future
+    - Tachyon CLI
+    - Attaching to a running process
+    - Tachyon TUI
