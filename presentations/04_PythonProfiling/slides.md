@@ -110,40 +110,16 @@ December 16, 2025<br>
 </style>
 
 ---
-layout: two-cols-header
----
 
-<style>
-.col-right {
-  flex: 1;
-  min-width: 0;
-}
-.col-left {
-  flex: 1;
-}
-.col-right pre {
-  overflow-x: auto;
-  max-width: 100%;
-}
-</style>
+# Introduction to Python Profiling: Timers
 
-# Introduction to Python Profiling
+- Profiling can be as simple as using timers
 
-::left::
 
-- Profiling helps us figure out where our code is spending time
-  - Usually without modifying the source. Helps answer the "where" question.
-- Can be as simple as using timers (example on the right), but this approach doesn't scale
-- Ways to profile Python code, in rough order of complexity:
-  - Timers: `timeit.default_timer()`, `%timeit`
-  - Built-in profilers: `cProfile`, `Tachyon` (Python 3.15+)
-  - Third-party profilers: `py-spy`, `pyinstrument`
-  - Specialized profilers: `xprof`, `tensorboard`, NVIDIA Nsight (GPUs), `memray` (profiling Python memory usage), Linux `perf` (low-level, but supported natively by Python 3.12+)
-
-::right::
-
-- In Python:
-````md magic-move
+<div class="grid grid-cols-2 gap-2">
+<div class="col-span-1">
+<br>
+<i>Common pattern</i>
 ```python
 from time import time
 
@@ -151,8 +127,15 @@ tstart = time()
 f()
 tend = time()
 print('Took {} seconds'.format(tend - tstart))
+# Took 0.5001230239868164 seconds
 ```
+<br>
+</div>
 
+<v-click>
+<div class="col-span-1">
+<br>
+<i>Recommendation</i>
 ```python
 from timeit import default_timer
 
@@ -162,7 +145,11 @@ t += default_timer()
 print(f'{t=:8.4f}')
 # t=  0.5002
 ```
-````
+<br>
+</div>
+</v-click>
+</div>
+
 
 - Be careful about warm-up effects and timing variations, especially for fast functions!
 - In IPython (e.g. Jupyter Notebooks):
@@ -174,12 +161,27 @@ print(f'{t=:8.4f}')
 ```
 
 ---
+
+# The Python Profiling Landscape
+
+| | **Tracing** | **Sampling** |
+| ---: | :--- | :--- |
+| **Built-in** | <img src="./assets/python-logo.png" alt="Python" style="height: 1.5em; display: inline"> [cProfile](https://docs.python.org/3/library/profile.html#module-cProfile) | <img src="./assets/tachyon-logo.png" alt="Tachyon" style="height: 2em; display: inline"> [Tachyon](https://docs.python.org/3.15/library/profiling.sampling.html) (3.15+) |
+| **Third-Party** | [line_profiler](https://github.com/pyutils/line_profiler) | 🔬 [py-spy](https://github.com/benfred/py-spy)<br>🚴 [pyinstrument](https://github.com/joerick/pyinstrument)<br><img src="./assets/austin.png" alt="Austin" style="height: 1.5em; display: inline"> [Austin](https://github.com/P403n1x87/austin) |
+
+<br>
+
+- Specialized profilers
+  - [xprof](https://openxla.org/xprof)/[tensorboard](https://www.tensorflow.org/tensorboard): PyTorch, [JAX](https://docs.jax.dev/en/latest/profiling.html#xprof-tensorboard-profiling), & TensorFlow
+  - [NVIDIA Nsight](https://developer.nvidia.com/nsight-systems): CUDA code
+  - [memray](https://github.com/bloomberg/memray): Python memory usage
+  - Linux [perf](https://perfwiki.github.io/main/): low-level sampling profiler for complied code, but [supported natively](https://docs.python.org/3/howto/perf_profiling.html) by Python 3.12+
+
+---
 layout: two-cols-header
 ---
 
 # Two Kinds of Profilers
-🐍 = built into Python
-
 ::left::
 
 ### Tracing Profilers
@@ -187,9 +189,6 @@ layout: two-cols-header
 - Sometimes called "instrumenting" profilers
 - ✅ Pro: **deterministic** accounting of every statement and function call
 - ⚠️ Cons: **slow**, high overhead; can give misleading results. Modifies the code being executed.
-- Examples
-  - [cProfile](https://docs.python.org/3/library/profile.html#module-cProfile) 🐍
-  - [line_profiler](https://github.com/pyutils/line_profiler)
 
 ::right::
 
@@ -198,11 +197,6 @@ layout: two-cols-header
 - ✅ Pros: **low overhead**, unintrusive
 - ⚠️ Cons: **can miss fast functions**, require high sampling rate, produce large outputs, invalid traces, noisy results
 - Despite cons, sampling profilers are usually considered the more modern, reliable option
-- Examples
-   - [py-spy](https://github.com/benfred/py-spy)
-   - [Austin](https://github.com/P403n1x87/austin)
-   - [pyinstrument](https://github.com/joerick/pyinstrument)
-   - [Tachyon](https://docs.python.org/3.15/library/profiling.sampling.html) 🐍
 
 ---
 layout: two-cols-header
@@ -215,13 +209,12 @@ layout: two-cols-header
 </style>
 
 # Introduction to py-spy
-https://github.com/benfred/py-spy
+https://github.com/benfred/py-spy ([most starred](https://github.com/topics/profiling) Python profiler on GitHub)
 
 ::left::
 
 - Sampling profiler for Python
-- Written in Rust (fast, safe, compatible with a wide range of Python versions)
-- #2 [most starred](https://github.com/topics/profiling) profiler on GitHub (#1 for Python)
+- Written in Rust (simplifies Python compatibility)
 - Can launch a Python program under the profiler, or attach to an existing process
 - Can profile native extensions, e.g. NumPy, Cython, pybind11, etc
 - Supports subprocesses/multiprocessing and multithreading
@@ -772,6 +765,19 @@ a(1)
 </div>
 
 ---
+layout: center
+---
+
+<center>
+<h1>Flamegraphs:</h1>
+<h2>🔬 Speedscope Demo with Lomb-Scargle</h2>
+</center>
+<br>
+<div class="text-center opacity-60">
+<a href="https://www.speedscope.app">https://www.speedscope.app</a>
+</div>
+
+---
 
 # Flamegraphs: Astropy Lomb-Scargle
 
@@ -782,15 +788,6 @@ a(1)
 # Flamegraphs: Astropy Lomb-Scargle Left-Heavy
 
 <img src="./assets/flamegraph-lombscargle-leftheavy.png" style="max-width:100%;">
-
----
-layout: center
----
-
-# Flamegraphs: 🔬Speedscope Demo
-<div class="text-center opacity-60">
-<a href="https://www.speedscope.app">https://www.speedscope.app</a>
-</div>
 
 ---
 layout: two-cols-header
@@ -988,7 +985,7 @@ Functions with Highest Call Magnification (Cumulative/Direct):
   py-spy record -F -f speedscope python your_program.py
   # open resulting json file in https://www.speedscope.app
   ```
-- All these profiles are keyed off function name and file name. Consider this when naming your functions—does this function name make sense in isolation?
+- All these profiles display function name and file name. Consider this when naming your functions—does this name make sense in isolation?
 - Tachyon is likely to become the go-to profiler in Python 3.15. Try it now with
   ```bash {lines: false}
   uv run -p 3.15 -m profiling.sampling
