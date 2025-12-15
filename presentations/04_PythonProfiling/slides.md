@@ -131,8 +131,8 @@ layout: two-cols-header
 
 ::left::
 
-- Profiling helps us figure out where our Python program is spending time
-  - Usually without modifying the code. Helps answer the "where" question.
+- Profiling helps us figure out where our code is spending time
+  - Usually without modifying the source. Helps answer the "where" question.
 - Can be as simple as using timers (example on the right), but this approach doesn't scale
 - Ways to profile Python code, in rough order of complexity:
   - Timers: `timeit.default_timer()`, `%timeit`
@@ -182,7 +182,7 @@ layout: two-cols-header
 
 ::left::
 
-## Tracing Profilers
+### Tracing Profilers
 - Deterministically record the runtime of every Python statement
 - Sometimes called "instrumenting" profilers
 - ✅ Pro: **deterministic** accounting of every statement and function call
@@ -193,10 +193,10 @@ layout: two-cols-header
 
 ::right::
 
-## Sampling Profilers
+### Sampling Profilers
 - Take frequent snapshots of the program state (the "call stack"), infer statistically where your program is spending time
 - ✅ Pros: **low overhead**, unintrusive
-- ⚠️ Cons: **can miss fast functions**, require high sampling rate, produce large outputs, invalid traces
+- ⚠️ Cons: **can miss fast functions**, require high sampling rate, produce large outputs, invalid traces, noisy results
 - Despite cons, sampling profilers are usually considered the more modern, reliable option
 - Examples
    - [py-spy](https://github.com/benfred/py-spy)
@@ -290,11 +290,12 @@ GIL: 0.00%, Active: 0.00%, Threads: 1
 
 <div class="col-span-3">
 
-- Tips:
-  - Ignore `%Own` and `%Total`, they show the % of samples *since the last refresh* (i.e. 1 second). `OwnTime` and `TotalTime` show aggregate results over the entire run.
-  - Press `l` while profiling to toggle grouping by line number or function
+- We're using `py-spy -i` to count idle time, since our dummy program uses `sleep()`.
+- Tips
+  - Ignore `%Own` and `%Total`, they show the % of samples *since the last refresh* (i.e. 1 second).
+  - Focus on `OwnTime` and `TotalTime`, which show aggregate results over the entire run.
   - Press `3` or `4` to sort by `OwnTime` or `TotalTime`
-  - We're using `py-spy -i` to count idle time, since our dummy program uses `sleep()`.
+  - Press `l` while profiling to toggle grouping by line number or function
 </div>
 
 </div>
