@@ -186,23 +186,6 @@ print(f'{t=:8.4f}')
 ```
 
 ---
-
-# The Python Profiling Landscape
-
-| | **Tracing** | **Sampling** |
-| ---: | :--- | :--- |
-| **Built-in** | <img src="./assets/python-logo.png" alt="Python" style="height: 1.5em; display: inline"> [cProfile](https://docs.python.org/3/library/profile.html#module-cProfile) | <img src="./assets/tachyon-logo.png" alt="Tachyon" style="height: 2em; display: inline"> [Tachyon](https://docs.python.org/3.15/library/profiling.sampling.html) (3.15+) |
-| **Third-Party** | [line_profiler](https://github.com/pyutils/line_profiler) | 🔬 [py-spy](https://github.com/benfred/py-spy)<br>🚴 [pyinstrument](https://github.com/joerick/pyinstrument)<br><img src="./assets/austin.png" alt="Austin" style="height: 1.5em; display: inline"> [Austin](https://github.com/P403n1x87/austin) |
-
-<br>
-
-- Specialized profilers
-  - [xprof](https://openxla.org/xprof)/[tensorboard](https://www.tensorflow.org/tensorboard): PyTorch, [JAX](https://docs.jax.dev/en/latest/profiling.html#xprof-tensorboard-profiling), & TensorFlow
-  - [NVIDIA Nsight](https://developer.nvidia.com/nsight-systems): CUDA code
-  - [memray](https://github.com/bloomberg/memray): Python memory usage
-  - Linux [perf](https://perfwiki.github.io/main/): low-level sampling profiler for complied code, but [supported natively](https://docs.python.org/3/howto/perf_profiling.html) by Python 3.12+
-
----
 layout: two-cols-header
 ---
 
@@ -222,6 +205,23 @@ layout: two-cols-header
 - ✅ Pros: **low overhead**, unintrusive
 - ⚠️ Cons: **can miss fast functions**, require high sampling rate, produce large outputs, invalid traces, noisy results
 - Despite cons, sampling profilers are usually considered the more modern, reliable option
+
+---
+
+# The Python Profiling Landscape
+
+| | **Tracing** | **Sampling** |
+| ---: | :--- | :--- |
+| **Built-in** | <img src="./assets/python-logo.png" alt="Python" style="height: 1.5em; display: inline"> [cProfile](https://docs.python.org/3/library/profile.html#module-cProfile) | <img src="./assets/tachyon-logo.png" alt="Tachyon" style="height: 2em; display: inline"> [Tachyon](https://docs.python.org/3.15/library/profiling.sampling.html) (3.15+) |
+| **Third-Party** | [line_profiler](https://github.com/pyutils/line_profiler) | 🔬 [py-spy](https://github.com/benfred/py-spy)<br>🚴 [pyinstrument](https://github.com/joerick/pyinstrument)<br><img src="./assets/austin.png" alt="Austin" style="height: 1.5em; display: inline"> [Austin](https://github.com/P403n1x87/austin) |
+
+<br>
+
+- Specialized profilers
+  - [xprof](https://openxla.org/xprof)/[tensorboard](https://www.tensorflow.org/tensorboard): PyTorch, [JAX](https://docs.jax.dev/en/latest/profiling.html#xprof-tensorboard-profiling), & TensorFlow
+  - [NVIDIA Nsight](https://developer.nvidia.com/nsight-systems): CUDA code
+  - [memray](https://github.com/bloomberg/memray): Python memory usage
+  - Linux [perf](https://perfwiki.github.io/main/): low-level sampling profiler for complied code, but [supported natively](https://docs.python.org/3/howto/perf_profiling.html) by Python 3.12+
 
 ---
 layout: two-cols-header
