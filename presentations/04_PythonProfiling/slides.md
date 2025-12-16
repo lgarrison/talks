@@ -111,6 +111,31 @@ December 16, 2025<br>
 
 ---
 
+## Sciware Rules of Engagement
+
+### Goal:
+
+Activities where participants all actively work to foster an environment which encourages participation across experience levels, coding language fluency, *technology choices*\*, and scientific disciplines.
+
+<small>\*though sometimes we try to expand your options</small>
+
+### Guidelines:
+
+- Avoid discussions between a few people on a narrow topic
+- Provide time for people who haven't spoken to speak/ask questions
+- Provide time for experts to share wisdom and discuss
+- Work together to make discussions accessible to novices
+
+<small>
+(These will always be a work in progress and will be updated, clarified, or expanded as needed.)
+</small>
+
+<div class="image-container" style="display:flex; justify-content:center;">
+  <img src="./assets/sciware.png" alt="Sciware" style="height: 100px; margin-top: 1rem;">
+</div>
+
+---
+
 # Introduction to Python Profiling: Timers
 
 - Profiling can be as simple as using timers
@@ -769,7 +794,7 @@ layout: center
 ---
 
 <center>
-<h1>Flamegraphs:</h1>
+<h1>Flamegraphs</h1>
 <h2>🔬 Speedscope Demo with Lomb-Scargle</h2>
 </center>
 <br>
@@ -994,3 +1019,14 @@ Functions with Highest Call Magnification (Cumulative/Direct):
 ### Up Next
 - These tools are generally not helpful with JIT-compiled Python code (e.g. JAX, PyTorch, Tensorflow, Numba)
 - Specialized, framework-aware profilers usually required for those
+
+---
+
+<div class="text-center">
+  <h1>Feedback Form</h1>
+  Only 1 required question!
+</div>
+<img src="./assets/qr.png" style="max-height: 250px; display: block; margin: 0 auto;" alt="QR code to feedback form">
+<div class="text-center">
+<a href="https://bit.ly/48Hh33D">https://bit.ly/48Hh33D</a>
+</div>
